@@ -14,11 +14,6 @@ import matplotlib.pyplot as plt
 
 vaccine_status = pd.read_csv("covid_vaccine_statewise.csv")
 
-vaccine_status.info()
-s="Females(Individuals Vaccinated)"
-print(s)
-f=float(s)
-print(f)
 
 fig,ax1=plt.subplots()
 sns.set(rc={'figure.figsize':(12,8)})
