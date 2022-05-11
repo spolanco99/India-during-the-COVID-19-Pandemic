@@ -11,7 +11,7 @@ import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
 
-##opens and reads the file 
+##opens and reads the file on hand 
 vaccine_status = pd.read_csv("covid_vaccine_statewise.csv")
 
 ## this sets up a graph to show the activity surrounding vaccination in different 
