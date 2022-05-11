@@ -44,14 +44,18 @@ fig.savefig("highest testing data.png")
 ##lowest testing data comprises of Dadra and Nagra Haveli and Damn and Diu
 
 testing_Dadra = testing[testing.State=='Dadra and Nagar Haveli and Daman and Diu']
+
 ##plotting the data of the state with the lowest testing data 
 
 fig,ax1=plt.subplots()
 sns.set(rc={'figure.figsize':(12,8)})
 sns.lineplot(data=testing_Dadra, ax=ax1)
+# this allows for the naming of the graph and both the x and y axes 
 ax1.set_title("Dadra and Nagar Haveli and Daman and Diu")
 ax1.set_xlabel("date")
 ax1.set_ylabel("Samples")
+
+## in order to make the graph more readable and an appropriate size one must utilize the tight_layout function 
 fig.tight_layout()
 fig.savefig("lowest testing data.png")
 
