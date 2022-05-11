@@ -9,9 +9,19 @@ With this in mind, this project analyzes the impact of  confirmed cases of COVID
 
 DATA SOURCES: 
 
-In order to access the data used in this project you can visit the following site: 
+In order to access the data used in this project you can visit the following site: https://www.mohfw.gov.in/ and https://www.covid19india.org/
 It provides three different data set and you would download each one which are: 
-StatewiseTestingDetails.csv 
-covid_19_india.csv
-covid_vaccine_statewise.csv
-This data set provides information on all territories within India and how COVID-19 invididually affected each territory. Also, it goes into detail about the level of testing activity within each state, the activity varies greatly depending which state you look at. The last dataset hones in on vaccination activity, whether thats the number of doses taken and how inviduals identify themselves. This ranges from female, male, transgender. It also breaks down vaccination status by ages such as 18- 25,30 -44 and 60+. 
+StatewiseTestingDetails.csv, (which can be found in the first link )
+covid_vaccine_statewise.csv, (first link)
+covid_19_india.csv, (second link) 
+
+This data set provides information on all territories within India and how COVID-19 invididually affected each territory. Also, it goes into detail about the level of testing activity within each state, the activity varies greatly depending which state you look at. The last dataset hones in on vaccination activity, whether thats the number of doses taken and/or how inviduals identify themselves. This ranges from female, male and transgender. It also breaks down vaccination status by ages such as 18- 25,30 -44 and 60+. 
+
+Order of Running the Scripts: 
+
+1) = covid. py
+This script first cleans the data in order for it to become more readable, by dropping specific cloumns and checking if there any null values. It also groups and sums up all the cases. In order to get is sorted and cleaned we combined all cases and sorting the data so that it easier to work with. The script then sorts and graph cases among foriegn born citizens in India by territory which produces "Cases among Foreign Born by Territory.png" It also graphs cases among Indians by territory which produces "Cases among Indians by Territory.png". Followed by confirmed cases among territories which results in "Confirmed Cases.png",  Followed by all curedcases among terriotires which produces "Cured Cases.png" and lastly deaths caused by COVID-19 which produces a bar plot "deaths.png"
+
+ 
+2)= StateWisetTesting.py
+3 = vaccinaton_status.py 
