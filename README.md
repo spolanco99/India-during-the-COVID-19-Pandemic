@@ -19,9 +19,15 @@ This data set provides information on all territories within India and how COVID
 
 Order of Running the Scripts: 
 
-1) = covid. py
-This script first cleans the data in order for it to become more readable, by dropping specific cloumns and checking if there any null values. It also groups and sums up all the cases. In order to get is sorted and cleaned we combined all cases and sorting the data so that it easier to work with. The script then sorts and graph cases among foriegn born citizens in India by territory which produces "Cases among Foreign Born by Territory.png" It also graphs cases among Indians by territory which produces "Cases among Indians by Territory.png". Followed by confirmed cases among territories which results in "Confirmed Cases.png",  Followed by all curedcases among terriotires which produces "Cured Cases.png" and lastly deaths caused by COVID-19 which produces a bar plot "deaths.png"
+1) = StatewiseTesting.py 
+Script starts off by reading the file and shows general information about testing across all states. It then sorts the level of testing activity in chronological order from lowest to highest. After, it analyzes the state with the highest testing activity which results in "highest testing data.png". It then hones in and analyzes the state with the lowest testing data which produces a line plot saves us "lowest testing data.png" 
 
  
-2)= StateWisetTesting.py
-3 = vaccinaton_status.py 
+2) = C
+
+
+3) = covid. py
+This script first cleans the data in order for it to become more readable, by dropping specific cloumns and checking if there any null values. It also groups and sums up all the cases. In order to get is sorted and cleaned we combined all cases and sorting the data so that it easier to work with. The script then sorts and analyzes cases among foriegn born citizens in India by territory which produces "Cases among Foreign Born by Territory.png" It also analyzes the impact COVID-19 had among Indians by territory which produces "Cases among Indians by Territory.png". Followed by confirmed cases among territories which results in "Confirmed Cases.png",  Followed by all cured cases among terriotires which produces "Cured Cases.png" and lastly deaths caused by COVID-19 which produces a bar plot "deaths.png"
+
+ 
+
